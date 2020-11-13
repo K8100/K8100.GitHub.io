@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .right ul li{
+            float:left;
+        }
+        .menu ul li{
+            float:right;
+            list-style: none;
+            font-size: 14px;
+            color: aqua;
+        }
+        .menu ul li a{
+            text-decoration: none;
+        }
+        .fenlei a{
+            display: block;
+            text-decoration: none;
+            color: blueviolet;
+            text-align: center;
+           padding: 32px;
+        }
+        .fenlei{float:left; width:10%;height:470px; border:solid 1px black;background-color: aqua;overflow: hidden}
+        .right{float:right;width:88%;height:470px;border:solid 1px black;background-color: aqua}
+
+        /* 导航链接 */
+
+        /* 链接 - 修改颜色 */
+        .fenlei a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    </style>
+    <script>
+        var images=["bookk1.jpg","bookk2.jpg","bookk3.jpg"];
+        var timer;
+        onload = function() {
+            // 3.切换图片src属性 - 什么时候切换 - 周期性切换
+            //   也就是说,在页面加载之后,开启一个周期性定时器,定时器内部要完成图片切换
+            timer = setInterval("changeImage()", 3000);
+        }
+        // 定义一个计数器
+        var index = 0;
+        function changeImage() {
+            // 4.切换图片src属性
+            // a.获得img标签
+            var banner = document.getElementById("banner");
+            // b.修改它的src属性
+            index ++;
+            banner.src = images[index % 3];
+        }
+        function stopImage() {
+            // 暂停轮播就是让定时器暂停工作
+            clearInterval(timer);
+        }
+        function startImage() {
+            timer = setInterval("changeImage()", 1000);
+        }
+    </script>
+</head>
+<body>
+<div class="menu">
+    <ul>
+
+        <li><a href="html.html"><span style="margin: 5px">退出</span></a></li>
+        <li><a href="gwc.html"><span style="margin: 5px">购物车</span></a> </li>
+        <li><a href="zc.html"><span style="margin: 5px">注册</span></a></li>
+        <li><a href="dl.html" ><span style="margin: 5px">登录</span></a></li>
+
+
+
+    </ul>
+</div>
+
+<div><img id="banner" src="bookk1.jpg" width="100%" height="200px"   onmouseover="stopImage()" onmouseout="startImage()"></div>
+<div class="main">
+    <div class="fenlei">
+        分类
+
+        <a href="h1.html"> 文学</a>
+        <a href="h2.html">生活</a>
+        <a href="h3.html">计算机</a>
+        <a href="h4.html">外语</a>
+        <a href="h5.html">经管</a>
+
+
+
+    </div>
+        <div class="right">
+<!--        <ul>-->
+<!--        <li><img src="java.jpg" width="120" heigh="100">-->
+<!--        <p>书名:java应用程序</p>-->
+<!--        <p>作者:张宇飞</p>-->
+<!--        <p>价格:$5</p>-->
+<!--        <p>出版社:525人民教育</p>-->
+<!--        <p>介绍:java相关知识体系框架的介绍</p>-->
+<!--        <a href="#">加入购物车</a>-->
+<!--        <a href="#">去结算</a></li>-->
+<!--            <li> <img src="k.jpg" width="110" heigh="100" float="left">-->
+<!--            <p>书名:c应用程序</p>-->
+<!--            <p>作者:张天赐</p>-->
+<!--            <p>价格:$6</p>-->
+<!--            <p>出版社:525人民教育</p>-->
+<!--            <p>介绍:c相关知识体系框架</p>-->
+<!--            <a href="#">加入购物车</a>-->
+<!--            <a href="#">去结算</a></li>-->
+<!--            <li> <img src="timg.jpg" width="110" heigh="100" float="left">-->
+<!--                <p>书名:web应用程序</p>-->
+<!--                <p>作者:郑舒涵</p>-->
+<!--                <p>价格:$7</p>-->
+<!--                <p>出版社:525人民教育</p>-->
+<!--                <p>介绍:前端相关知识体系框架</p>-->
+<!--                <a href="#">加入购物车</a>-->
+<!--                <a href="#">去结算</a></li>-->
+<!--            <li> <img src="999.jpg" width="110" heigh="100" float="left">-->
+<!--                <p>书名:数据结构应用程序</p>-->
+<!--                <p>作者:张晨曦</p>-->
+<!--                <p>价格:$8</p>-->
+<!--                <p>出版社:525人民教育</p>-->
+<!--                <p>介绍:数据结构相关知识体系框架</p>-->
+<!--                <a href="#">加入购物车</a>-->
+<!--                <a href="#">去结算</a></li>-->
+<!--            <li> <img src="11111.jpg" width="150" heigh="270" float="left">-->
+<!--                <p>书名:数据结构应用程序</p>-->
+<!--                <p>作者:曾伟琨</p>-->
+<!--                <p>价格:$9</p>-->
+<!--                <p>出版社:525人民教育</p>-->
+<!--                <p>介绍:数据库相关知识体系框架</p>-->
+<!--                <a href="#">加入购物车</a>-->
+<!--                <a href="#">去结算</a></li>-->
+<!--            <li> <img src="122222.jpg" width="150" heigh="270" float="left">-->
+<!--                <p>书名:爷的青春</p>-->
+<!--                <p>作者:梦泪</p>-->
+<!--                <p>价格:$10</p>-->
+<!--                <p>出版社:525人民教育</p>-->
+<!--                <p>介绍:青春</p>-->
+<!--                <a href="#">加入购物车</a>-->
+<!--                <a href="#">去结算</a></li>-->
+<!--        </ul>-->
+
+    <div style="clear:both;"></div>
+</div>
+</div>
+
+
+
+</body>
+</html>
