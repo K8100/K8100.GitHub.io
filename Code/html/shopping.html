@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/shopping.css">
+
+</head>
+<body>
+<script type="text/javascript" src="../js/shopping.js"></script>
+
+
+<h1>书</h1>
+<table>
+    <tr>
+        <th>书名</th>
+        <th>单价(元)</th>
+        <th>作者</th>
+        <th>库存</th>
+        <th>好评率</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>童年</td>
+        <td>80</td>
+        <td>张</td>
+        <td>893</td>
+        <td>98%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>java应用程序</td>
+        <td>150</td>
+        <td>陈</td>
+        <td>9028</td>
+        <td>96%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>c应用程序</td>
+        <td>60</td>
+        <td>赖</td>
+        <td>672</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>web应用程序</td>
+        <td>100</td>
+        <td>张</td>
+        <td>8937</td>
+        <td>95%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>数据结构</td>
+        <td>70</td>
+        <td>郑</td>
+        <td>482</td>
+        <td>100%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>爷的青春</td>
+        <td>60</td>
+        <td>梦</td>
+        <td>520</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>工商管理</td>
+        <td>50</td>
+        <td>q</td>
+        <td>750</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>数据库应用程序</td>
+        <td>100</td>
+        <td>z</td>
+        <td>750</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>java设计应用程序</td>
+        <td>50</td>
+        <td>f</td>
+        <td>750</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>雅思听力</td>
+        <td>40</td>
+        <td>w</td>
+        <td>582</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="加入购物车" name="product" onclick="addProduct(this)"/>
+        </td>
+    </tr>
+
+</table>
+
+<h1>购物车</h1>
+<table>
+    <thead>
+    <tr>
+        <th>书名</th>
+        <th>单价(元)</th>
+        <th>数量</th>
+        <th>金额(元)</th>
+        <th>删除</th>
+    </tr>
+    </thead>
+    <tbody id="goods">
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3" align="right">总计</td>
+        <td id="total"></td>
+        <td></td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>
