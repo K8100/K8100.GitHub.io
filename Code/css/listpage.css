@@ -1,7 +1,19 @@
 
 @import"normalize.css";
+
 .right ul li{
     float:left;
+}
+.main{
+    background-image: url("../image/tybz.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    max-width: 100%;
+
+    height: 100%;
+    width:100%;
+    margin:0 0 0 0;
+    overflow:hidden hidden;
 }
 .menu ul li{
     float:right;
@@ -12,6 +24,7 @@
 .menu ul li a{
     text-decoration: none;
 }
+
 .fenlei a{
     display: block;
     text-decoration: none;
