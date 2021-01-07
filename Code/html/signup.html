@@ -11,13 +11,7 @@
             ["南京","无锡","徐州","常州","苏州","南通","连云港","淮安","盐城","扬州","镇江","泰州","宿迁"],
             ["杭州","宁波","温州","绍兴","湖州","嘉兴","金华","衢州","台州","丽水","舟山"],
         ];
-        /**
-         * 选择省份, 让城市列表发生改变
-         * 1.确定事件: 给province绑定onchange事件
-         * 2.获取省份对应的城市列表 - 实际开发中是从数据库中获取的
-         * 3.创建option元素, 内容就是城市名字
-         * 4.获取city标签, 将option元素添加到city元素中
-         */
+        
         function getCity(){
             // 先把之前城市select里的option删掉
             var city = document.getElementById("city");
@@ -58,7 +52,7 @@
 
     }
 </script>
-<form name="login" action="index.html" id="wz">
+<form name="login" action="signin.html" id="wz" method="post">
 
     <span > 用户名:</span><input type="text" name="name"><br>
     <span>密码:</span><input type="password" name="password"><br>
