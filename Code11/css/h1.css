@@ -1,0 +1,30 @@
+@import"normalize.css";
+.right ul li{
+    float:left;
+}
+.menu ul li{
+    float:right;
+    list-style: none;
+    font-size: 14px;
+    color: aqua;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.fenlei a{
+    display: block;
+    text-decoration: none;
+    color: blueviolet;
+    text-align: center;
+    padding: 32px;
+}
+.fenlei{float:left; width:10%;height:470px; border:solid 1px black;background-color: lightgreen;overflow: hidden}
+.right{float:right;width:88%;height:470px;border:solid 1px black;background-color: lightgreen}
+
+/* 导航链接 */
+
+/* 链接 - 修改颜色 */
+.fenlei a:hover {
+    background-color: #ddd;
+    color: black;
+}
